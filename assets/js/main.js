@@ -217,14 +217,14 @@
       });
   });
 
-  // document.addEventListener("contextmenu", (event) => event.preventDefault());
-  // document.addEventListener("keydown", (e) => {
-  //   if (
-  //     e.keyCode === 123 ||
-  //     (e.ctrlKey && e.shiftKey && e.keyCode === 73) ||
-  //     (e.ctrlKey && e.keyCode === 85)
-  //   ) {
-  //     e.preventDefault();
-  //   }
-  // });
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
+  document.addEventListener("keydown", (e) => {
+    if (
+      e.keyCode === 123 ||
+      (e.ctrlKey && e.shiftKey && e.keyCode === 73) ||
+      (e.ctrlKey && e.keyCode === 85)
+    ) {
+      e.preventDefault();
+    }
+  });
 })();
